@@ -1,0 +1,316 @@
+{
+  "status": "passed",
+  "arguments": {
+    "model": "/Users/jake/src/open_src/rec/.build/m4-profile-model",
+    "output": "/Users/jake/src/open_src/rec/.build/m4-results/w40-m32-h40-default-short.json",
+    "workers": 40,
+    "mlp_workers": 32,
+    "experimental_intermediate_mlp": false,
+    "qkv_strategy": "auto",
+    "head_workers": 40,
+    "prefill_chunk_size": 2048,
+    "specialize_mixed_experts": false,
+    "contexts": [
+      1024
+    ],
+    "steps": 128,
+    "repeats": 3,
+    "warmups": 1,
+    "parity_steps": 8,
+    "packet_size": 8,
+    "variants": [
+      "scalar",
+      "packet"
+    ],
+    "sampling": "default",
+    "timeout": 600.0,
+    "cache_limit_mib": 2048,
+    "exhaustive_validation": false,
+    "child": true
+  },
+  "parity": [
+    {
+      "context": 1024,
+      "steps": 8,
+      "packets": 1,
+      "passed": true,
+      "checks": [
+        "native_scalar_layers",
+        "native_scalar_logits",
+        "packet_tokens",
+        "packet_scalar_layers",
+        "packet_scalar_logits",
+        "packet_scalar_kv"
+      ]
+    }
+  ],
+  "performance": [
+    {
+      "context": 1024,
+      "variants": {
+        "scalar": {
+          "samples": [
+            {
+              "seconds": 0.757623958052136,
+              "tokens": 128,
+              "requested_steps": 128,
+              "completed_requested_steps": true,
+              "tokens_per_second": 168.949250666637,
+              "prefill_seconds": 0.5987699580146,
+              "prefill_tokens_per_second": 1710.172640249649,
+              "stopped_on_eos": false,
+              "token_sha256": "e52d74b8b8568e3e11f9781db48ca11b9df744f210812289787a89820906d29f"
+            },
+            {
+              "seconds": 0.7447900830302387,
+              "tokens": 128,
+              "requested_steps": 128,
+              "completed_requested_steps": true,
+              "tokens_per_second": 171.86050528388031,
+              "prefill_seconds": 0.6002060830360278,
+              "prefill_tokens_per_second": 1706.0806761909037,
+              "stopped_on_eos": false,
+              "token_sha256": "e52d74b8b8568e3e11f9781db48ca11b9df744f210812289787a89820906d29f"
+            },
+            {
+              "seconds": 0.8506360419560224,
+              "tokens": 128,
+              "requested_steps": 128,
+              "completed_requested_steps": true,
+              "tokens_per_second": 150.4756366843642,
+              "prefill_seconds": 0.6473934999667108,
+              "prefill_tokens_per_second": 1581.727342107473,
+              "stopped_on_eos": false,
+              "token_sha256": "e52d74b8b8568e3e11f9781db48ca11b9df744f210812289787a89820906d29f"
+            }
+          ],
+          "median_tokens_per_second": 168.949250666637,
+          "min_tokens_per_second": 150.4756366843642,
+          "max_tokens_per_second": 171.86050528388031,
+          "stdev_tokens_per_second": 11.597862030212125
+        },
+        "packet": {
+          "samples": [
+            {
+              "seconds": 0.6922079999931157,
+              "tokens": 128,
+              "requested_steps": 128,
+              "completed_requested_steps": true,
+              "tokens_per_second": 184.91551672513611,
+              "prefill_seconds": 0.5923895409796387,
+              "prefill_tokens_per_second": 1728.5923014552284,
+              "stopped_on_eos": false,
+              "token_sha256": "e52d74b8b8568e3e11f9781db48ca11b9df744f210812289787a89820906d29f"
+            },
+            {
+              "seconds": 0.6910587089369074,
+              "tokens": 128,
+              "requested_steps": 128,
+              "completed_requested_steps": true,
+              "tokens_per_second": 185.22304739767952,
+              "prefill_seconds": 0.6032683339435607,
+              "prefill_tokens_per_second": 1697.4204386066801,
+              "stopped_on_eos": false,
+              "token_sha256": "e52d74b8b8568e3e11f9781db48ca11b9df744f210812289787a89820906d29f"
+            },
+            {
+              "seconds": 0.7089673340087757,
+              "tokens": 128,
+              "requested_steps": 128,
+              "completed_requested_steps": true,
+              "tokens_per_second": 180.54428442596708,
+              "prefill_seconds": 0.6287842500023544,
+              "prefill_tokens_per_second": 1628.5395189147403,
+              "stopped_on_eos": false,
+              "token_sha256": "e52d74b8b8568e3e11f9781db48ca11b9df744f210812289787a89820906d29f"
+            }
+          ],
+          "median_tokens_per_second": 184.91551672513611,
+          "min_tokens_per_second": 180.54428442596708,
+          "max_tokens_per_second": 185.22304739767952,
+          "stdev_tokens_per_second": 2.6170298009168427
+        }
+      }
+    }
+  ],
+  "device": {
+    "device_name": "Apple M4 Max",
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "architecture": "applegpu_g16s",
+    "max_buffer_length": 86586540032,
+    "resource_limit": 499000
+  },
+  "profile": {
+    "chip": "M4 Max experimental",
+    "architecture": "applegpu_g16s",
+    "workers": 40,
+    "mlp_workers": 32,
+    "head_workers": 40,
+    "prefill_chunk_size": 2048,
+    "specialize_mixed_experts": false
+  },
+  "kernels": [
+    {
+      "name": "flint_decode_resident_teams",
+      "source_sha256": "bb50ba70ce87300f8780173e1203e392af9f064427d144814000ceba8a0b3935"
+    },
+    {
+      "name": "routed_fast_exp_boundary_guard",
+      "source_sha256": "08ee5abf7772a1a1ec89467ed1c547cc2f739ac3f813317adb8bbcc45527a18b"
+    },
+    {
+      "name": "flint_decode_fast_activation",
+      "source_sha256": "9d862f6b14557c57e8996a0750aca061df357b51ab8e422aecf7d1effb9eadd7"
+    },
+    {
+      "name": "flint_int4_temperature_one_resident8",
+      "source_sha256": "b0e5dbab44448c64965d2fe8b250a9a7ed2cac62e17c1ab3e57ef6e164950857"
+    },
+    {
+      "name": "flint_int4_greedy_resident8",
+      "source_sha256": "1c82617c5f972f270d9ebfd79dd4f92941b7095829dd22691d54ad4c6a35fd86"
+    },
+    {
+      "name": "flint_filtered_resident_step",
+      "source_sha256": "ec665c5578a1283cdeef9ae61f8260ad793c7226c77fa38cb58725fd7a132a8d"
+    }
+  ],
+  "experiments": {
+    "qkv_strategy": "auto",
+    "intermediate_mlp": false
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+  "environment": {
+    "MLX_METAL_FAST_SYNCH": "1"
+  },
+  "host_state_before": {
+    "pmset -g batt": {
+      "returncode": 0,
+      "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22937699)\t94%; charging; 0:23 remaining present: true\n",
+      "stderr": ""
+    },
+    "pmset -g custom": {
+      "returncode": 0,
+      "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            1\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 1\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n",
+      "stderr": ""
+    },
+    "pmset -g therm": {
+      "returncode": 0,
+      "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n",
+      "stderr": ""
+    },
+    "sw_vers": {
+      "returncode": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n",
+      "stderr": ""
+    }
+  },
+  "source_sha256": {
+    "engine/src/rec_mlx/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "engine/src/rec_mlx/cache.py": "25528bb61ee247d7e46cef426c55f87b12c15db3466a36525b21c3a61c4b3ec4",
+    "engine/src/rec_mlx/chat.py": "ed385c40538cc07cdce206193e309ba7f397bfa8c3c3ca8295244466c67f6502",
+    "engine/src/rec_mlx/checkpoint.py": "5db6bbc34f365745ec8219f5e197a193e9088ce76bea7a207f82dce34f57544e",
+    "engine/src/rec_mlx/cli.py": "dd0f46538677aec4cba3ed0ab6565b05a03a0cdfca1638fa5ab723e44704ada5",
+    "engine/src/rec_mlx/detokenize.py": "81e186c2580848aec02c4f9e7d1e91c48adf2f21d1bec413d9b3f92ab87ba324",
+    "engine/src/rec_mlx/engine.py": "4859c5ca07f321e6a078b9fd62a41d4eea1ff1e0dc6fa7252374da54d2a06ccd",
+    "engine/src/rec_mlx/grammar.py": "84c8561d0ec85f57da8852aed109daea2410c6db73e77576583f4757fab57f51",
+    "engine/src/rec_mlx/grammar_builder.py": "eb9115283755c57a70a0921d677661b03abe162e795f37810755d9de37d3c9b2",
+    "engine/src/rec_mlx/kernels/__init__.py": "323e8e3e80a4a8ca15a57613f254d3085fa789d865a007651a92e672c7e67436",
+    "engine/src/rec_mlx/kernels/activation_optimization.py": "5f8b33d5bf80b9b05b82c9f00f626a6e9eba8acd5bee30a6ddf464deb2625436",
+    "engine/src/rec_mlx/kernels/device.py": "e73e967d3d752afdce95fb77d713de388363aae460ee76f414fbef44ec209606",
+    "engine/src/rec_mlx/kernels/expert_teams.py": "a2a7fbb4276c6ccc6d526126d24121974b4e54dfd15b9a447de7754da5216a33",
+    "engine/src/rec_mlx/kernels/kv_teams.py": "94f39f5b8c6485df34ebd1454e5c12a3ac2219f7f3640ba2edc5d17e7f2aae3b",
+    "engine/src/rec_mlx/kernels/masked_sampling.py": "19e3ae3d522fd99534255d643b2035c9b8be8e170a5bc79031888ed9ce04fa5d",
+    "engine/src/rec_mlx/kernels/megakernel.py": "93c282ecb2552177df2c115806337a5fe6660652ad768740863398c16fd6aaa5",
+    "engine/src/rec_mlx/kernels/mixed_bits.py": "5d8a2b9ef46e5ee08639c58b67a8f85ae2e62cfe50193dda3d702e837a5fdcd4",
+    "engine/src/rec_mlx/kernels/rank_routing.py": "00c3a426dba8418639eb2a56ccc1031109c2860d3c209975a747cc6f0f9f6611",
+    "engine/src/rec_mlx/kernels/resident_block.py": "2fe6297489a2c83c9cb173fb7f80041b6a2f69a8212106bac37e4130289a9acc",
+    "engine/src/rec_mlx/kernels/resident_optimizations.py": "bf95c7809acd4885c90d9131b8185b7335c3a5b88538ae65d466547b9d51913a",
+    "engine/src/rec_mlx/kernels/routing_attention.py": "8319c3eccd6eee8f20e2d639e6557fed904963b9528479775e5fda065cb87319",
+    "engine/src/rec_mlx/kernels/sampling.py": "f343cc2f634ac49e4f578d96f1c6acaeb91b86f64dc691a0887922d62dddf0ba",
+    "engine/src/rec_mlx/kernels/shader_source.py": "e282d00f92b616b7a588a4556bac89d50dc540b400e3ff2864a0eb37661378c5",
+    "engine/src/rec_mlx/model.py": "56363f7a1caea2b9db317feb192f4bfea32eccb2b6b190dffc3fa93ee09695b1",
+    "engine/src/rec_mlx/prefix.py": "2d31f22c45d41c8cc5233a82eb4ccda04444657b634d27a22dfae43943d6a7af",
+    "engine/src/rec_mlx/quantized.py": "137cbdde8bc91e7148cf120dbabac9e6a209a9e490d3f1b869f51873c751a271",
+    "engine/src/rec_mlx/scheduler.py": "21e509f2ee9c05381c39f1c0a7f3321f1525f98e51b77bc38351fbfd25196fa9",
+    "engine/src/rec_mlx/server.py": "99e32413596275bb7975807e519cefe19f5b91e352b9f7b3f815ab445081f09b"
+  },
+  "harness_sha256": "626ae0e36d2cffb7444edf778752f020f51ed94d9eb95e18609809d83c65b68a",
+  "dependencies": {
+    "mlx": "0.32.0",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.16.1"
+  },
+  "git_commit": "e53663b262af4cb1ca498e596ca8b1a2d79e0800",
+  "config_sha256": "80f577a984db1bd40dfff88457b611d4c13e807704a945616be27f28809eed21",
+  "execution": {
+    "optimized": true,
+    "fallback_allowed": false,
+    "sampling": "default",
+    "scalar": "FullModel.forward",
+    "packet": "FilteredResidentSampler.block",
+    "native": "QATModel.native",
+    "packet_size": 8,
+    "strict_bitwise_parity": true,
+    "parity_sampling": "greedy",
+    "prefill_excluded": true,
+    "eos_respected": true,
+    "synthetic_prompt": true,
+    "decode_capacity_preallocated": true,
+    "token_count_convention": "steps counts timed forward transitions after the first token sampled from prefill; the first prefill token is excluded from both elapsed time and token count"
+  },
+  "allocation_cache_limit_bytes": 2147483648,
+  "startup_memory": {
+    "active_bytes": 22717343372,
+    "peak_bytes": 24595229328
+  },
+  "load_and_compile_setup_seconds": 1.899656291003339,
+  "schedule": {
+    "workers": 40,
+    "attention": 40,
+    "merge": 40,
+    "router": 40,
+    "mlp": 32,
+    "head": 40,
+    "query_heads": 4,
+    "long_heads": 8,
+    "long_context": 1024,
+    "kv_first": false,
+    "unroll": 1,
+    "profile": false
+  },
+  "host_state_after": {
+    "pmset -g batt": {
+      "returncode": 0,
+      "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=22937699)\t94%; charging; 0:25 remaining present: true\n",
+      "stderr": ""
+    },
+    "pmset -g custom": {
+      "returncode": 0,
+      "stdout": "Battery Power:\n Sleep On Power Button 1\n powermode            1\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n powermode            0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 1\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n",
+      "stderr": ""
+    },
+    "pmset -g therm": {
+      "returncode": 0,
+      "stdout": "Note: No thermal warning level has been recorded\nNote: No performance warning level has been recorded\nNote: No CPU power status has been recorded\n",
+      "stderr": ""
+    },
+    "sw_vers": {
+      "returncode": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t26.6.2\nBuildVersion:\t\t25G83\n",
+      "stderr": ""
+    }
+  },
+  "final_memory": {
+    "active_bytes": 22717343765,
+    "peak_bytes": 29659591824
+  },
+  "subprocess": {
+    "returncode": 0,
+    "timeout_seconds": 600.0,
+    "timed_out": false,
+    "elapsed_seconds": 18.50609258399345
+  }
+}

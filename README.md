@@ -26,10 +26,15 @@ excluded.</sub></p>
 
 ## Requirements
 
-- Apple Silicon Mac with an M4 Pro, M5 Pro, or M5 Max
+- Apple Silicon Mac with an M4 Pro, M4 Max (40-core GPU), M5 Pro, or M5 Max
 - At least 48 GB unified memory
 - About 30 GB free disk space
 - [Node.js 22](https://nodejs.org/en/download) and npm for pi
+
+The local M4 Max profile uses the optimized 64/64/64-worker resident kernels.
+It was validated on a 40-core M4 Max with 128 GB memory through 32K-token
+input contexts; the 32-core M4 Max is rejected until separately qualified.
+See the [M4 Max measurements](experiments/m4_max/results.md) for coverage and results.
 
 
 ## Install

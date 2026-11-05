@@ -1,0 +1,818 @@
+{
+  "device": {
+    "device_name": "Apple M4 Max",
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "architecture": "applegpu_g16s",
+    "max_buffer_length": 86586540032,
+    "resource_limit": 499000
+  },
+  "config_sha256": "80f577a984db1bd40dfff88457b611d4c13e807704a945616be27f28809eed21",
+  "cases": [
+    {
+      "context": 34,
+      "temperature": 0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 520,
+      "packets": 131,
+      "native_checks": 8
+    },
+    {
+      "context": 34,
+      "temperature": 0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 8
+    },
+    {
+      "context": 34,
+      "temperature": 0.05,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 0.05,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 0.6,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 0.6,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1.7,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1.7,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 2,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 2,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 1,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 1,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 2,
+      "top_p": 0.5,
+      "top_k": 149999,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 2,
+      "top_p": 0.5,
+      "top_k": 149999,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 0.01,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 0.01,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 0,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 42,
+      "positions": 520,
+      "packets": 131,
+      "native_checks": 8
+    },
+    {
+      "context": 34,
+      "temperature": 0,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 8
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 1.5,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 1.5,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": -1.5,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 34,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": -1.5,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 8
+    },
+    {
+      "context": 513,
+      "temperature": 0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 8
+    },
+    {
+      "context": 513,
+      "temperature": 0.05,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 0.05,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 0.6,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 0.6,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1.7,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1.7,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 2,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 2,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 1,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 1,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 2,
+      "top_p": 0.5,
+      "top_k": 149999,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 2,
+      "top_p": 0.5,
+      "top_k": 149999,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 0.01,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 0.01,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 0,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 8
+    },
+    {
+      "context": 513,
+      "temperature": 0,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 8
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 1.5,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 1.5,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 1.5,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": -1.5,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 513,
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": -1.5,
+      "seed": 73,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 0
+    },
+    {
+      "context": 8192,
+      "temperature": 0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "seed": 42,
+      "positions": 16,
+      "packets": 5,
+      "native_checks": 8
+    }
+  ],
+  "stopping": {
+    "eos": [
+      {
+        "temperature": 0,
+        "top_p": 1,
+        "top_k": 0,
+        "stop": 1,
+        "packet_start": 0
+      },
+      {
+        "temperature": 0,
+        "top_p": 1,
+        "top_k": 0,
+        "stop": 4,
+        "packet_start": 0
+      },
+      {
+        "temperature": 0,
+        "top_p": 1,
+        "top_k": 0,
+        "stop": 8,
+        "packet_start": 0
+      },
+      {
+        "temperature": 1,
+        "top_p": 1,
+        "top_k": 0,
+        "stop": 1,
+        "packet_start": 0
+      },
+      {
+        "temperature": 1,
+        "top_p": 1,
+        "top_k": 0,
+        "stop": 4,
+        "packet_start": 0
+      },
+      {
+        "temperature": 1,
+        "top_p": 1,
+        "top_k": 0,
+        "stop": 8,
+        "packet_start": 0
+      },
+      {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "stop": 1,
+        "packet_start": 0
+      },
+      {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "stop": 4,
+        "packet_start": 0
+      },
+      {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20,
+        "stop": 8,
+        "packet_start": 0
+      }
+    ],
+    "cancellation": [
+      {
+        "temperature": 0,
+        "top_p": 1,
+        "top_k": 0
+      },
+      {
+        "temperature": 1,
+        "top_p": 1,
+        "top_k": 0
+      },
+      {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": 20
+      }
+    ]
+  },
+  "performance": [
+    {
+      "temperature": 0,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "scalar": 212.83986994700822,
+      "packet": 229.81157326476855
+    },
+    {
+      "temperature": 0.6,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "scalar": 200.24747380632635,
+      "packet": 213.920969796435
+    },
+    {
+      "temperature": 1,
+      "top_p": 1,
+      "top_k": 0,
+      "presence_penalty": 0,
+      "scalar": 180.9560487150394,
+      "packet": 188.40346610407423
+    },
+    {
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "scalar": 150.5813005037596,
+      "packet": 159.53117367351072
+    },
+    {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 0,
+      "scalar": 168.59107640035202,
+      "packet": 177.46118726143703
+    },
+    {
+      "temperature": 1,
+      "top_p": 0.95,
+      "top_k": 20,
+      "presence_penalty": 1.5,
+      "scalar": 172.58809964124129,
+      "packet": 180.70987927555515
+    }
+  ]
+}

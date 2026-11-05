@@ -1,0 +1,49 @@
+{
+  "kind": "synthetic_q4_expert_team_probe",
+  "device": {
+    "device_name": "Apple M4 Max",
+    "max_recommended_working_set_size": 115448725504,
+    "memory_size": 137438953472,
+    "architecture": "applegpu_g16s",
+    "max_buffer_length": 86586540032,
+    "resource_limit": 499000
+  },
+  "configuration": {
+    "workers": 36,
+    "mlp_workers": 32,
+    "steps": 8,
+    "repeats": 10,
+    "seed": 19
+  },
+  "bank_bytes": 14155776,
+  "shader_sha256": "d61c11c7c313636001a258807211cd1bdb7e797ae4870bd26a287a9a016c0954",
+  "limitation": "Tests actual expert-team math/barriers in a smaller shader; cannot establish full-model residency or token throughput.",
+  "parity": {
+    "activation": {
+      "exact": true,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "finite": true
+    },
+    "down": {
+      "exact": true,
+      "mismatched_elements": 0,
+      "max_abs_error": 0.0,
+      "finite": true
+    }
+  },
+  "status": "passed",
+  "probe_seconds": [
+    0.0004927500849589705,
+    0.0005080410046502948,
+    0.00047795800492167473,
+    0.0004892090801149607,
+    0.0006238330388441682,
+    0.0005817079218104482,
+    0.000621084007434547,
+    0.0005052919732406735,
+    0.0004895000020042062,
+    0.0004770419327542186
+  ],
+  "median_ms_per_expert_block": 0.062377628637477756
+}

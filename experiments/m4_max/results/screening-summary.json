@@ -1,0 +1,243 @@
+[
+  {
+    "candidate": "w36-m32-h32-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 36,
+      "mlp_workers": 32,
+      "head_workers": 32,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "native": 71.11448577073915,
+      "scalar": 164.68798957331836,
+      "packet": 174.8722173514918
+    },
+    "error": null,
+    "qkv": "auto"
+  },
+  {
+    "candidate": "w40-m32-h40-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 40,
+      "mlp_workers": 32,
+      "head_workers": 40,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 168.949250666637,
+      "packet": 184.91551672513611
+    },
+    "error": null,
+    "qkv": "auto"
+  },
+  {
+    "candidate": "w48-m48-h48-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 48,
+      "mlp_workers": 48,
+      "head_workers": 48,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 153.6380407752297,
+      "packet": 179.09278318945533
+    },
+    "error": null,
+    "qkv": "auto"
+  },
+  {
+    "candidate": "w48-m48-h48-shared-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 48,
+      "mlp_workers": 48,
+      "head_workers": 48,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "failed",
+    "sampling": "default",
+    "tps": null,
+    "error": {
+      "check": "packet_tokens",
+      "expected": [
+        1599,
+        1113,
+        123621,
+        295,
+        618,
+        13201,
+        5951,
+        2112
+      ],
+      "actual": [
+        23017,
+        23017,
+        34631,
+        23017,
+        23017,
+        34631,
+        34631,
+        23017
+      ],
+      "position": 0
+    },
+    "qkv": "shared"
+  },
+  {
+    "candidate": "w56-m56-h56-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 56,
+      "mlp_workers": 56,
+      "head_workers": 56,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 126.31297452048045,
+      "packet": 136.01275500594136
+    },
+    "error": null,
+    "qkv": "auto"
+  },
+  {
+    "candidate": "w64-m64-h64-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 64,
+      "mlp_workers": 64,
+      "head_workers": 64,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 184.56080387227763,
+      "packet": 200.43729529728242
+    },
+    "error": null,
+    "qkv": "auto"
+  },
+  {
+    "candidate": "w68-m64-h64-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 68,
+      "mlp_workers": 64,
+      "head_workers": 64,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 155.15790952985466,
+      "packet": 166.53884400677904
+    },
+    "error": null,
+    "qkv": "auto"
+  },
+  {
+    "candidate": "w72-m64-h64-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 72,
+      "mlp_workers": 64,
+      "head_workers": 64,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 164.79010497378977,
+      "packet": 191.87223715665039
+    },
+    "error": null,
+    "qkv": "auto"
+  },
+  {
+    "candidate": "w76-m64-h64-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 76,
+      "mlp_workers": 64,
+      "head_workers": 64,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 156.54067128868041,
+      "packet": 192.05310278543823
+    },
+    "error": null,
+    "qkv": "auto"
+  },
+  {
+    "candidate": "w76-m64-h64-shared-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 76,
+      "mlp_workers": 64,
+      "head_workers": 64,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 165.4402618882471,
+      "packet": 183.50104592345457
+    },
+    "error": null,
+    "qkv": "shared"
+  },
+  {
+    "candidate": "w80-m64-h64-default-short",
+    "profile": {
+      "chip": "M4 Max experimental",
+      "architecture": "applegpu_g16s",
+      "workers": 80,
+      "mlp_workers": 64,
+      "head_workers": 64,
+      "prefill_chunk_size": 2048,
+      "specialize_mixed_experts": false
+    },
+    "status": "passed",
+    "sampling": "default",
+    "tps": {
+      "scalar": 162.0078768277833,
+      "packet": 189.63033195645835
+    },
+    "error": null,
+    "qkv": "auto"
+  }
+]

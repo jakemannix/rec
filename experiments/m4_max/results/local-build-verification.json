@@ -1,0 +1,46 @@
+{
+  "version": "rec 0.1.0-m4max-local",
+  "status": {
+    "engine": "mlx",
+    "ready": true,
+    "version": "0.1.0-m4max-local",
+    "model": "flint",
+    "revision": "flint-int4",
+    "runtime_sha256": "18f35f0293e15a81f8894a3d22ecd5e1cabc3ca3ac9c45a1de8e5e2662127ba2",
+    "endpoint": "http://127.0.0.1:54513/v1",
+    "context": 32768,
+    "max_context": 262144,
+    "instance_sha256": "32a55172596945021082d22b3d85bab02e2808c0d074c119cadcd3bcf7652d0a"
+  },
+  "generation": {
+    "usage": {
+      "prompt_tokens": 47,
+      "completion_tokens": 512,
+      "total_tokens": 559,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "wall_seconds": 2.9575181659311056,
+    "finish_reason": "length"
+  },
+  "tool_call": {
+    "passed": true,
+    "usage": {
+      "prompt_tokens": 157,
+      "completion_tokens": 64,
+      "total_tokens": 221,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "wall_seconds": 0.5546410829992965
+  },
+  "streaming": {
+    "passed": true,
+    "wall_seconds": 0.24984566704370081
+  },
+  "authentication": "passed",
+  "server_exit_code": 0,
+  "passed": true
+}
